@@ -6,6 +6,7 @@ set(CMAKE_CXX_STANDARD 17)
 
 find_package(Eigen3 REQUIRED)
 
-add_executable(main main.cpp hopter.cpp hopter.hpp)
+aux_source_directory(src DIR_SRCS)
+add_executable(main ${DIR_SRCS})
 
 target_link_libraries (main Eigen3::Eigen)

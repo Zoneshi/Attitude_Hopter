@@ -21,9 +21,9 @@ typedef struct Parameters
 {
     double time_step     = 0.01;
     double time_tau      = 0.01;
-    double k_omega       = 1.0;
-    double k_quat        = 1.0;
-    double alpha_quat    = 1.0;
+    double k_omega       = 50.0;
+    double k_quat        = 10.0;
+    double alpha_quat    = 10.0;
     Matrix3d I           = MatrixXd::Identity(3, 3);
     Matrix6d Gamma_omega = MatrixXd::Zero(6, 6);
     Matrix6d Gamma_theta = MatrixXd::Zero(6, 6);
